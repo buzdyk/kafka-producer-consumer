@@ -2,6 +2,8 @@ services:
   producer:
     build: ./cmd/producer
     container_name: kafka-like-go-producer
+    depends_on:
+      - kafka
     networks:
       - myNetwork
     ports:

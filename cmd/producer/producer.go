@@ -34,6 +34,7 @@ func producer() (*kafka.Producer, error) {
 func ProduceN(num int) {
 	p, _ := producer()
 	defer p.Close()
+	defer p.Flush(100)
 
 	for i := 0; i < num; i++ {
 		produce(p)
