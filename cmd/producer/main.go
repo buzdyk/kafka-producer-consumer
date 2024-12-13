@@ -1,5 +1,5 @@
 package main
 
 func main() {
-	Start("localhost", 9090)
+	Start("0.0.0.0", 9090)
 }
