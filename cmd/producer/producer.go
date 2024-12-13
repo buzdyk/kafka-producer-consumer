@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	KafkaServer = "localhost:9092"
+	KafkaServer = "kafka-like-kafka:9092"
 	KafkaTopic  = "messages-v1-topic"
 )
 
@@ -41,6 +41,7 @@ func ProduceN(num int) {
 }
 
 func produce(p *kafka.Producer) {
+
 	topic := KafkaTopic
 	message := Message{
 		ID:      uuid.New().String(),

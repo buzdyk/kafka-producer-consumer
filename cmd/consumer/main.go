@@ -7,7 +7,7 @@ import (
 )
 
 const (
-	KafkaServer  = "localhost:9092"
+	KafkaServer  = "kafka-like-kafka:19092"
 	KafkaTopic   = "messages-v1-topic"
 	KafkaGroupId = "support-service"
 )
